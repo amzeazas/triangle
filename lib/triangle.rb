@@ -6,6 +6,12 @@ class Triangle
   end
 
   define_method(:triangle?) do
-    false
+    if @side1.+(@side2) <= @side3
+      "not a triangle"
+    elsif @side1.+(@side3) <= @side2
+      "not a triangle"
+    else @side2.+(@side3) <= @side1
+      "not a triangle"
+    end
   end
 end
