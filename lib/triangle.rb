@@ -7,11 +7,11 @@ class Triangle
 
   define_method(:triangle?) do
     if @side1.+(@side2) <= @side3
-      "not a triangle"
+      "not a"
     elsif @side1.+(@side3) <= @side2
-      "not a triangle"
+      "not a"
     else @side2.+(@side3) <= @side1
-      "not a triangle"
+      "not a"
       if @side1 == @side2 && @side1 == @side3
         "equilateral"
       elsif @side1 == @side2 && @side1 != @side3
