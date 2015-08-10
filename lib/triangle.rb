@@ -12,6 +12,9 @@ class Triangle
       "not a triangle"
     else @side2.+(@side3) <= @side1
       "not a triangle"
+      if @side1 = @side2 && @side1 = @side3
+        "equilateral"
+      end
     end
   end
 end

@@ -7,9 +7,9 @@ describe(Triangle) do
       test_triangle = Triangle.new(2, 2, 8)
       expect(test_triangle.triangle?()).to(eq("not a triangle"))
     end
-    # it("processes input and returns whether it is an equilateral triangle") do
-    #   test_triangle = Triangle.new(2, 2, 2)
-    #   expect(test_triangle.triangle?()).to(eq("equilateral"))
-    # end
+    it("processes input and returns whether it is an equilateral triangle") do
+      test_triangle = Triangle.new(2, 2, 2)
+      expect(test_triangle.triangle?()).to(eq("equilateral"))
+    end
   end
 end
