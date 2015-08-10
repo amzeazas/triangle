@@ -7,7 +7,10 @@ get('/') do
   erb(:index)
 end
 
-# get('/title') do
-#   @title = params.fetch('title').title_case()
-#   erb(:title)
-# end
+get('/triangle') do
+  @side1 = params.fetch('side1')
+  @side2 = params.fetch('side2')
+  @side3 = params.fetch('side3')
+  @triangle = Triangle.triangle?(@side1, @side2, @side3)
+  erb(:triangle)
+end
